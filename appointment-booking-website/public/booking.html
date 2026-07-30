@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | BookEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-calendar-check"></i> BookEase
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<a href="index.html" class="btn">Home</a>
+
+</nav>
+
+</header>
+
+<section style="padding:80px 8%;">
+
+<h1 style="text-align:center;margin-bottom:40px;">
+Book an Appointment
+</h1>
+
+<form id="bookingForm" style="max-width:700px;margin:auto;">
+
+<label>Service</label>
+
+<select id="service" required>
+<option value="">Select Service</option>
+<option value="Hair Styling">Hair Styling</option>
+<option value="Hair Cut">Hair Cut</option>
+<option value="Consultation">Consultation</option>
+<option value="Coaching Session">Coaching Session</option>
+</select>
+
+<br><br>
+
+<label>Consultant</label>
+
+
+<select id="consultant" required>
+<option value="">Select Consultant</option>
+<option value="Anna Smith">Anna Smith</option>
+<option value="Michael Smith">Michael Smith</option>
+<option value="Emma Williams">Emma Williams</option>
+</select>
+
+<br><br>
+
+<label>Date</label>
+
+<input type="date" id="date" required>
+
+<br><br>
+
+<label>Time</label>
+<select id="time" required>
+<option value="">Select Time</option>
+<option value="09:00 AM">09:00 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="12:00 PM">12:00 PM</option>
+<option value="02:00 PM">02:00 PM</option>
+<option value="03:00 PM">03:00 PM</option>
+<option value="04:00 PM">04:00 PM</option>
+</select>
+
+<br><br>
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<br><br>
+<label>Phone</label>
+<input type="tel" id="phone" placeholder="03xx xxxxxxx" required>
+
+<br><br>
+<label>Email</label>
+<input type="email" id="email" placeholder="your@email.com" required>
+
+<br><br>
+<label>Notes</label>
+<textarea id="notes" placeholder="Any special request"></textarea>
+
+<br><br>
+<button type="submit">Confirm Booking</button>
+<br><br>
+
+<br><br>
+
+<label>Email</label>
+
+<input type="email" id="email" required>
+
+<br><br>
+
+<label>Additional Notes</label>
+
+<textarea id="notes" rows="5"></textarea>
+
+<br><br>
+
+<button type="submit" class="hero-btn">
+Confirm Booking
+</button>
+
+</form>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
